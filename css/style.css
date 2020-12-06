@@ -5,11 +5,11 @@
 	margin: 0;
 	border: 0;
 }
-/* *,*:before,*:after{
+*,*:before,*:after{
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
-}*/
+}
 :focus,:active{outline: none;}
 a:focus,a:active{outline: none;}
 
@@ -233,15 +233,92 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	max-width: 768px;
     position: relative;
 	margin: 0px auto;	
-	overflow: hidden;
+	
+	padding-top: 50px;
 	
 }
 
 .content-form {
 	position: relative;
-	max-width: 400px;
-	min-width: 320px;
-	margin: 0 auto;
-	border: 1px solid black;
+	max-width: 400px;	
+	margin: 0 auto;		
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
+    -o-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
+    -ms-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
+}
+/* ========= Форма =========================================*/
 
+.form {
+	box-sizing: border-box;
+	width: 100%;
+	padding: 60px 10px 10px 10px;
+	font-size: 18px;
+	color:rgb(77, 77, 77) ;	
+}
+.form_title {
+	font-family: JosefinSans-Bold;
+    font-size: 25px;
+    color: #fff;
+    line-height: 1.2;
+    text-align: center;
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #57b846;
+    padding-top: 5px;
+	padding-bottom: 5px;
+	
+}
+.form_item {
+	margin-bottom: 20px;
+}
+.checkbox {
+}
+.checkbox_label {
+	
+	
+
+}
+.checkbox_input {
+}
+.form_label {
+	display: block;
+	margin: 0px 0px 10px 0px;
+}
+.form_input {
+	box-sizing: border-box;
+	height: 40px;
+	padding: 0px 10px;
+	width: 100%;
+	font-size: 18px;	
+	border: #57b846 1px solid;
+	border-radius: 10px;
+}
+
+.options {
+}
+.options_item {
+}
+
+.options_label {
+	margin: 0px 0px 10px 0px;
+	
+}
+.select {
+	border: #57b846 1px solid;
+	box-sizing: border-box;
+	height: 40px;
+	padding: 0px 10px;
+	width: 100%;
+	font-size: 18px;	
+	border: #57b846 1px solid;
+	border-radius: 5px;
+}
+.form_button {
 }
