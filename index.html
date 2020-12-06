@@ -76,7 +76,97 @@
 		<div class="conteiner-two">
 			<div class="content">
 				<div class="content-form">
-
+					<form id="chanel_form" class="form" action="#" method="get">
+						<span class="form_title">Проветривание</span>
+						<div class="form_item">
+							<div class="checkbox">
+							<label for="chanel_use" class="checkbox_label">Использовать</label>
+							<input id="chanel_use" name="chanel_use" type="checkbox" class="checkbox_input">
+							</div>
+						</div>
+						<div class="form_item">
+							<label for="start_time" class="form_label">Старт в:</label>
+							<input id="start_time" type="time" name="start_time" class="form_input">
+						</div>
+						<div class="form_item">
+							<label for="work_time" class="form_label">Время работы</label>
+							<input id="work_time" type="time" name="work_time" class="form_input">
+						</div>
+						<div class="form_item">
+							<div class="checkbox">
+							<label for="shed" class="checkbox_label">Расписание</label>
+							<input id="shed" name="shed" type="checkbox" class="checkbox_input">
+							</div>
+						</div>
+						<div class="form_item">
+							<label for="shed_day" class="form_label">Дни работы</label>
+							<input id="shed_day" type="date" name="shed_day" class="form_input">
+						</div>
+						<div class="form_item">
+							<label for="start_sensor" class="form_label">Открыть при температуре:</label>
+							<input id="start_sensor" type="tel" name="start_sensor" class="form_input">
+						</div>
+						<div class="form_item">
+							<label for="stop_sensor" class="form_label">Закрыть при температуре:</label>
+							<input id="stop_sensor" type="tel" name="stop_sensor" class="form_input">
+						</div>
+						<div class="form_item">
+							<div class="form_label">Тип управления</div>
+							<div class="options">
+								<div class="options_item">
+									<input id="klapan" type="radio" checked value="0" name="type_work" class="otions_item">
+									<label for="klapan" class="options_label">Клапан</label>
+								</div>
+								<div class="options_item">
+									<input id="privod" type="radio" value="1" name="type_work" class="otions_item">
+									<label for="privod" class="options_label">Привод</label>
+								</div>
+							</div>
+						</div>
+						<div class="form_item">
+							<div class="form_label">Открыть</div>
+							<select name="rele_open" id="rele_open" class="select">
+								<option value="0" selected>Реле 1</option>
+								<option value="1" >Реле 2</option>
+								<option value="2" >Реле 3</option>
+								<option value="3" >Реле 4</option>
+								<option value="4" >Реле 5</option>
+								<option value="5" >Реле 6</option>
+								<option value="6" >Реле 7</option>
+								<option value="7" >Реле 8</option>
+								<option value="8" >Реле 9</option>
+								<option value="9" >Реле 10</option>
+								<option value="10" >Реле 11</option>
+								<option value="12" >Реле 12</option>
+							</select>
+						</div>
+						<div class="form_item">
+							<label for="time_open" class="form_label">Время отрытия (сек.)</label>
+							<input id="time_open" type="tel" name="time_open" class="form_input">
+						</div>
+						<div class="form_item">
+							<div class="form_label">Закрыть</div>
+							<select name="rele_close" id="rele_close" class="select">
+								<option value="0" >Реле 1</option>
+								<option value="1" selected>Реле 2</option>
+								<option value="2" >Реле 3</option>
+								<option value="3" >Реле 4</option>
+								<option value="4" >Реле 5</option>
+								<option value="5" >Реле 6</option>
+								<option value="6" >Реле 7</option>
+								<option value="7" >Реле 8</option>
+								<option value="8" >Реле 9</option>
+								<option value="9" >Реле 10</option>
+								<option value="10" >Реле 11</option>
+								<option value="12" >Реле 12</option>
+							</select>
+						</div>
+						<div class="form_item">
+							<label for="time_close" class="form_label">Время закрытия (сек.)</label>
+							<input id="time_close" type="tel" name="time_close" class="form_input">
+						</div>
+						<button class="form_button" type="submit">Сохранить</button>
+					</form>
 
 
 				</div>
