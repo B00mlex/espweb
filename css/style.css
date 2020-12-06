@@ -283,7 +283,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	height: 30px;
 	cursor: pointer;
 	border-bottom: 1px solid #bfc8c4;
-		
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);	
 	
 }
  
@@ -313,9 +313,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	-webkit-transition: all 0.3s ease 0s;
 
 }
-.checkbox.active{
-	color: #000;
-}
+
 .checkbox.active:before{
 	background-color: #57b846;
 }.checkbox.active:after{
