@@ -233,7 +233,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	max-width: 768px;
     position: relative;
 	margin: 0px auto;	
-	padding: 50px 10px 10px 10px;
+	padding: 50px 5px 10px 5px;
 }
 
 .content-form {
@@ -277,13 +277,61 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	margin-bottom: 20px;
 }
 .checkbox {
+	width: 100%;
+	
+	position: relative;
+	height: 30px;
+	cursor: pointer;
+	border-bottom: 1px solid #bfc8c4;
+		
+	
+}
+ 
+.checkbox:before{
+	content: '';
+	width: 50px;
+	height: 20px;
+	border-radius: 10px;
+	background-color: #bfc8c4;
+	position: absolute;
+	right: 5px;
+	top: 0;
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+	-webkit-transition: all 0.3s ease 0s;
+
+}
+.checkbox:after{
+	content: '';
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	border-radius: 50%;
+	background-color:  #bfc8c4;
+	right: 30px;
+	top: -5px;
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+	-webkit-transition: all 0.3s ease 0s;
+
+}
+.checkbox.active{
+	color: #000;
+}
+.checkbox.active:before{
+	background-color: #57b846;
+}.checkbox.active:after{
+	background-color: #57b846;
+	right: 5px;
+}
+.checkbox input{
+	display: none;
 }
 .checkbox_label {
-	
+
 	
 
 }
 .checkbox_input {
+	
 }
 .form_label {
 	display: block;
