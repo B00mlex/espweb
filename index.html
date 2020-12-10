@@ -92,9 +92,11 @@
 							<label for="work_time" class="form_label">Время работы</label>
 							<input id="work_time" type="time" name="work_time" class="form_input">
 						</div>
+						<fieldset class="form_fieldset">
+							<legend class="form_fieldset--legend">Расписание</legend>
 						<div class="form_item">
 							<div class="checkbox">
-							<div  class="checkbox_label">Расписание</div>
+							<div  class="checkbox_label">Использовать</div>
 							<input id="shed" name="shed" type="checkbox" class="checkbox_input">
 							</div>
 						</div>
@@ -102,6 +104,7 @@
 							<label for="shed_day" class="form_label">Дни работы</label>
 							<input id="shed_day" type="date" name="shed_day" class="form_input">
 						</div>
+						</fieldset>
 						<div class="form_item">
 							<label for="start_sensor" class="form_label">Открыть при температуре:</label>
 							<input id="start_sensor" type="tel" name="start_sensor" class="form_input">
@@ -111,19 +114,22 @@
 							<input id="stop_sensor" type="tel" name="stop_sensor" class="form_input">
 						</div>
 						<div class="form_item radio_item">
-							<div class="form_label">Тип управления:</div>
+							<fieldset class="form_fieldset">
+								<legend class="form_fieldset--legend">Тип управления:</legend>
+								
 							<div class="options">
-								<div class="options_item">
+									<div class="options_item">
 									<label for="klapan" class="options_label">Клапан</label>
 									<input id="klapan" type="radio" checked value="0" name="type_work" class="radiobutton">
 									
-								</div>
+									</div>
 								<div class="options_item">
 									<label for="privod" class="options_label">Привод</label>
 									<input id="privod" type="radio" value="1" name="type_work" class="radiobutton">
 									
 								</div>
 							</div>
+							</fieldset>
 						</div>
 						<div class="form_item">
 							<div class="form_label">Открыть</div>
