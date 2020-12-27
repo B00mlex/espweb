@@ -39,5 +39,11 @@ $.each($('.options_item'), function(){
 });
 
 //======== END RADIO ===========
+$('.day').click( function(event){
+
+        $(this).toggleClass('active');
+      
+});
+
 
 });//============ end document ready===========
