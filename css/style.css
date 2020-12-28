@@ -382,7 +382,8 @@ padding:5px 0px 0px 10px;
 }
 .options_item.active:before{
 	
-}.options_item.active:after{
+}
+.options_item.active:after{
 	transform: scale(1);
 }
 .options_item input{
@@ -430,7 +431,6 @@ padding:5px 0px 0px 10px;
 }
 .schedule{
 	/* display: inline-flex; */
-	
 	padding-left: 10px;
 }
 .day{
@@ -447,6 +447,17 @@ padding:5px 0px 0px 10px;
 	line-height: 40px;
 }
 .day.active{
-	
+
 	background-color: #57b8463a;
+}
+.sched_button{
+	display: inline-block;
+	min-width: 86px;
+	min-height: 40px;
+	cursor: pointer;
+	border: solid 1px #57b846;
+	border-radius: 10px;
+	line-height: 40px;
+
+
 }
