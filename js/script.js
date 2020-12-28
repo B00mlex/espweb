@@ -44,6 +44,31 @@ $('.day').click( function(event){
         $(this).toggleClass('active');
       
 });
+$('#sched_button').click( function(event){
+//   $(this).parent(this).find(".day").removeClass("active");
+
+ let str = '';
+ $(this).parent(this).find(".day").each(function(){
+         if ($(this).hasClass("active")){
+          if(str === ""){  
+           str +=$(this).text();
+          }else{
+            str += ',' + $(this).text();
+          }  
+        }
+     });
+
+//  $(schedule).each(function(){
+//     if ($(this).hasClass("active")){
+        
+//       str +=$(this).text() + ',';  
+//     }
+//  });
+ 
+ alert(str);
+
+  return false;
+});
 
 
 });//============ end document ready===========
